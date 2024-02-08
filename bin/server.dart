@@ -71,7 +71,7 @@ List<Map<String, dynamic>> createClasses() {
         "from": from.toIso8601String(),
         "to": to.toIso8601String(),
         "spotsAvailable": rng.nextInt(5) + 5,
-        "totalSpots": 10,
+        "totalSpots": rng.nextInt(5) + 10,
         "instructor": instructorName,
         "room": rooms[rng.nextInt(rooms.length)],
       });
