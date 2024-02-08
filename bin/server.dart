@@ -57,7 +57,7 @@ List<Map<String, dynamic>> createClasses() {
     for (int classNum = 0; classNum < 5; classNum++) {
       final from =
           DateTime(now.year, now.month, now.day + i, rng.nextInt(10) + 8);
-      final to = from.add(const Duration(hours: 1));
+      final to = from.add(Duration(minutes: (rng.nextInt(4) + 1) * 30));
 
       final name = names[rng.nextInt(names.length)];
 
