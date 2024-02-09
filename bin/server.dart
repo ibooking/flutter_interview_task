@@ -169,15 +169,11 @@ Future<Response> bookHandler(Request request) async {
 }
 
 Future<Response> unBookHandler(Request request) async {
-  final classId = jsonDecode(await request.readAsString())['classId'];
+  final classId = "${jsonDecode(await request.readAsString())["classId"]}";
 
-  final groupClass = classes.firstWhereOrNull((c) => c["id"] == classId);
-
-  if (groupClass == null) {
-    return Response.notFound("Class '$classId' not found");
+  if (!bookedClassIds.remove(classId)) {
+    return Response.notFound("Class '$classId' is not booked");
   }
-
-  bookedClassIds.remove('$classId');
 
   return Response.ok('ok');
 }
