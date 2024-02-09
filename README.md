@@ -6,14 +6,15 @@ Develop a gym class booking app using Flutter for managing gym class bookings. T
 
 ## Requirements
 
-- A login page.
-- Two main pages, a page for viewing bookings, and one for browsing classes.
-- The ability to book and unbook a class
-- A logout button on the bookings page.
-- Don't remove the routes defined in `main.dart` (you can add routes if needed)
+The app should have the following functionality:
+
+- A login page
+- A page for viewing bookings and one for browsing classes.
+- A way to book and unbook a class
+- A way to log out
 - (Bonus) A class detail page
 
-You are free to modify the code and add any dependencies as you see fit.
+You need to use the `go_router` package for navigation, otherwise you are free to modify the code and add any dependencies as you see fit.
 
 ## Setup
 
@@ -31,7 +32,8 @@ The server will be running on http://localhost:8080.
 When started, the server will generate classes for 7 days in the future.
 
 ## Delivery
-Fork this project, set it private and invite `brason`.
+
+Fork this project, set it to private and invite `brason`.
 
 ## API Documentation
 
