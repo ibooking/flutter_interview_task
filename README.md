@@ -28,6 +28,8 @@ dart bin/server.dart
 
 The server will be running on http://localhost:8080.
 
+When started, the server will generate classes for 7 days in the future.
+
 ## Delivery
 Fork this project, set it private and invite `brason`.
 
@@ -41,6 +43,12 @@ Fork this project, set it private and invite `brason`.
 - **Response**:
   - **200 OK**: Returns a token as a string.
   - **Content-Type**: `application/json`
+
+You need to create a Bearer token to authenticate. Add the following to the `Authorization` header:
+
+```
+Bearer {token}
+```
 
 ### Group Classes
 
@@ -88,3 +96,4 @@ Fork this project, set it private and invite `brason`.
   - `classId` (required): The ID of the class to unbook.
 - **Response**:
   - **200 OK**: Unbooking was successful.
+  - **404 Not Found**: If the class ID is not found.
