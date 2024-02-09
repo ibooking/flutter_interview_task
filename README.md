@@ -8,7 +8,7 @@ Develop a gym class booking app using Flutter for managing gym class bookings. T
 
 - A login page.
 - Two main pages, a page for viewing bookings, and one for browsing classes.
-- A button for booking and unbooking a class
+- The ability to book and unbook a class
 - A logout button on the bookings page.
 - Don't remove the routes defined in `main.dart` (you can add routes if needed)
 - (Bonus) A class detail page
